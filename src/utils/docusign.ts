@@ -1,4 +1,5 @@
-import * as docusign from 'docusign-esign'
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const docusign = require('docusign-esign') as any
 
 export async function getDocusignClient() {
   const apiClient = new docusign.ApiClient()
